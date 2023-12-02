@@ -1,4 +1,4 @@
-package exercises.first_list;
+package exercises.introduction;
 
 import java.util.Scanner;
 
