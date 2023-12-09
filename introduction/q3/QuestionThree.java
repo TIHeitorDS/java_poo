@@ -1,3 +1,5 @@
+// Programa que receba um ângulo em graus e o converta para sua representação em radianos
+
 import java.util.Scanner;
 import java.lang.Math;
 

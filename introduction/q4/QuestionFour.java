@@ -1,3 +1,5 @@
+// Programa que receba uma temperatura em graus centígrados e a apresente em graus Fahrenheit
+
 import java.util.Scanner;
 
 public class QuestionFour {

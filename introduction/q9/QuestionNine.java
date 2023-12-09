@@ -1,3 +1,7 @@
+// Programa que lê um número que representa o valor da carta, de um (ás) a
+// treze (rei), e outro número correspondente ao naipe (1 = ouros, 2 = paus, 3 = copas e 4 =
+// espadas)
+
 import java.util.Scanner;
 
 public class QuestionNine {

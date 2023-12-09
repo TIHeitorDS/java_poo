@@ -1,3 +1,5 @@
+// Programa que calcule a área de um quadrado
+
 import java.util.Scanner;
 
 public class QuestionOne {

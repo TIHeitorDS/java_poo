@@ -1,3 +1,5 @@
+// Programa que calcule a soma e a média aritmética de 3 números
+
 import java.util.Scanner;
 
 public class QuestionTwo {
