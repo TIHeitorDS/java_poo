@@ -1,5 +1,7 @@
 // Programa que lê três números e determina qual número é o menor
 
+package introduction.q7;
+
 import java.util.Scanner;
 
 public class QuestionSeven {

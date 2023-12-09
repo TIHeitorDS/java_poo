@@ -1,6 +1,8 @@
 // Programa que recebe do usuário o código do setor da loja e o valor original de um produto e 
 // imprime na tela o nome do setor e o valor do produto com desconto
 
+package introduction.q8;
+
 import java.util.Scanner;
 
 public class QuestionEight {

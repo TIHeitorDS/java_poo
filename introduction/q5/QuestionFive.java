@@ -1,5 +1,7 @@
 // Programa que receba um número de 3 dígitos no formato CDU (Centena, Dezena e Unidade) e o reescreve mo número no formato UCD
 
+package introduction.q5;
+
 import java.util.Scanner;
 
 public class QuestionFive {

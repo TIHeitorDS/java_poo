@@ -1,6 +1,8 @@
 // Programa que recebe um valor inteiro representando um intervalo em minutos e imprime o equivalente a esse período 
 // expresso em valores inteiros para dias, horas e minutos
 
+package introduction.q6;
+
 import java.util.Scanner;
 
 public class QuestionSix {
