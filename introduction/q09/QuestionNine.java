@@ -2,7 +2,7 @@
 // treze (rei), e outro número correspondente ao naipe (1 = ouros, 2 = paus, 3 = copas e 4 =
 // espadas)
 
-package introduction.q9;
+package introduction.q09;
 
 import java.util.Scanner;
 

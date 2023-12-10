@@ -1,6 +1,6 @@
 // Programa que receba uma temperatura em graus centígrados e a apresente em graus Fahrenheit
 
-package introduction.q4;
+package introduction.q04;
 
 import java.util.Scanner;
 

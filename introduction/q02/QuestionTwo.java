@@ -1,6 +1,6 @@
 // Programa que calcule a soma e a média aritmética de 3 números
 
-package introduction.q2;
+package introduction.q02;
 
 import java.util.Scanner;
 
