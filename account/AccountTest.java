@@ -8,6 +8,8 @@ public class AccountTest {
         Scanner input = new Scanner(System.in);
         Account myAccount = new Account();
 
+        System.out.println(myAccount.getName());
+
         String name;
 
         System.out.print("Please enter a name: ");
