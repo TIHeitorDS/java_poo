@@ -5,16 +5,9 @@ import java.util.Scanner;
 public class TeamTest {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Team teamOne = new Team();
+        Team teamOne = new Team("Botafogo", 0, 0, 0, 0);
 
-        String name;
         boolean option = true;
-
-        // recebendo informações do time
-        System.out.print("Informe o nome do time: ");
-        name = input.nextLine();
-
-        teamOne.setTeam(name);
 
         do {
             teamOne.play();
@@ -27,8 +20,8 @@ public class TeamTest {
         } while (option);
 
         System.out.printf(
-            "\nTime: %s ---> vitórias: %d\tderrotas: %d\tempates: %d\tpontos: %d\n",
-            name, teamOne.getWin(), teamOne.getLoss(), teamOne.getDraw(), teamOne.getPoints()
+            "\nTime: %s\nvitórias: %d\tderrotas: %d\tempates: %d\tpontos: %d\n",
+            teamOne.getName(), teamOne.getWin(), teamOne.getLoss(), teamOne.getDraw(), teamOne.getPoints()
         );
 
         input.close();

@@ -10,12 +10,12 @@ public class Team {
     private int draw;
     private int points;
 
-    public void setTeam(String name) {
+    public Team(String name, int win, int loss, int draw, int points) {
         this.name = name;
-        this.win = 0;
-        this.loss = 0;
-        this.draw = 0;
-        this.points = 0;
+        this.win = win;
+        this.loss = loss;
+        this.draw = draw;
+        this.points = points;
     }
 
     public void play() {
@@ -33,8 +33,11 @@ public class Team {
             System.out.println("\nEmpate!");
             this.draw++;
             this.points++;
-            this.points++;
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getWin() {
