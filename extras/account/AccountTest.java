@@ -1,5 +1,5 @@
 // Cria e manipula um objeto Account
-package account;
+package extras.account;
 
 import java.util.Scanner;
 

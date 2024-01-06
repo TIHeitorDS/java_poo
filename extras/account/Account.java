@@ -1,6 +1,6 @@
 // Classe que contém uma variável de instância name
 // e métodos para atribuir e obter seu valor
-package account;
+package extras.account;
 
 public class Account {
     private String name; // variável de instância

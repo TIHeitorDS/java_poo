@@ -1,3 +1,3 @@
-## POO (Java)
+## Object Oriented Programming (OOP)
 
-repositório que contém minhas práticas na linguagem de programação Java.
+A repository with my codes made in Java
