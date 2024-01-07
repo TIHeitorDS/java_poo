@@ -18,8 +18,10 @@ public class PassArray {
         }
         System.out.println();
 
+        System.out.println("value before: " + numbers[2]);
         modifyElement(numbers[2]);
-        System.out.println("number in index 2 modified to: " + numbers[2]);
+        System.out.println("value after: " + numbers[2]);
+
     }
 
     public static void modifyArray(int[] num) {
@@ -30,5 +32,7 @@ public class PassArray {
 
     public static void modifyElement(int element) {
         element += 2;
+
+        System.out.println("number in index 2 modified to: " + element);
     }
 }
