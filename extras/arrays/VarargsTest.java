@@ -1,3 +1,4 @@
+// Utilizando listas de argumentos de comprimento variável.
 package extras.arrays;
 
 public class VarargsTest {
