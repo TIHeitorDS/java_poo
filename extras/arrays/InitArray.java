@@ -1,24 +1,27 @@
+// Inicializando um array com argumentos de linha de comando.
 package extras.arrays;
 
 public class InitArray {
     public static void main(String[] args) {
-        final int ARRAY_LENGTH = 10;
-        // declara variável array e o inicializa com objeto array
-        int[] array = new int[ARRAY_LENGTH];
+        if (args.length != 3) {
+            System.out.println(
+                    "ERROR! Please re-enter the entire command, including an array size, initial value and increment.");
+        } else {
+            int arraySize = Integer.parseInt(args[0]);
+            int[] array = new int[arraySize];
 
-        // inicializando o array
-        // int[] n = { 10, 22, 55, 47, 14 };
+            int initialValue = Integer.parseInt(args[1]);
+            int increment = Integer.parseInt(args[2]);
 
-        System.out.println("Index\tValue");
+            for (int counter = 0; counter < array.length; counter++) {
+                array[counter] = initialValue + increment * counter;
+            }
 
-        // atribuindo a cada elemento do array valores pares
-        for (int k = 0; k < array.length; k++) {
-            array[k] = 2 + 2 * k;
-        }
+            System.out.printf("%s%8s%n", "Index", "Value");
 
-        // gera a saída de cada elemento do array
-        for (int i = 0; i < array.length; i++) {
-            System.out.printf("%d\t%d\n", i, array[i]);
+            for (int counter = 0; counter < array.length; counter++) {
+                System.out.printf("%5d%8d%n", counter, array[counter]);
+            }
         }
     }
 }
