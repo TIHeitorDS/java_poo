@@ -1,4 +1,4 @@
-// Aplicativo para criar uma lista de clintes
+// Aplicativo para criar uma lista de clientes
 package arraysAndArrayLists.q35;
 
 import java.util.ArrayList;
