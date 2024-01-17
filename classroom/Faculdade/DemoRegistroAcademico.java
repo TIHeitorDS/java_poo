@@ -6,7 +6,6 @@ public class DemoRegistroAcademico {
 
         michael.inicializaMatricula("michael douglas", "010203", 3, 0.75);
         
-        System.out.println(michael.nome);
         System.out.println(michael.calculaMensalidade());
 
         RegistroAcademico roberto = new RegistroAcademico();

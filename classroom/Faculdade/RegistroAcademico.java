@@ -1,10 +1,10 @@
 package classroom.Faculdade;
 
 public class RegistroAcademico {
-    String nome;
-    String matricula;
-    int codigoCurso;
-    double percentualCobranca;
+    private String nome;
+    private String matricula;
+    private int codigoCurso;
+    private double percentualCobranca;
 
     public void inicializaMatricula(String nome, String matricula, int codigoCurso, double percentualCobranca) {
         this.nome = nome;
