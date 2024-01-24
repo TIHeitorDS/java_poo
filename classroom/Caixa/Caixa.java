@@ -10,6 +10,7 @@ public class Caixa {
 
         caixa1.iniciaAtendimento();
         caixa2.iniciaAtendimento();
+        caixa2.iniciaAtendimento();
         caixa3.iniciaAtendimento();
         caixa4.iniciaAtendimento();
         caixa5.iniciaAtendimento();
