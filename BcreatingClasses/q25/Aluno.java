@@ -19,21 +19,17 @@ public class Aluno {
         return (2.5 * prova1 + 2.5 * prova2 + 2 * trabalho) / 7;
     }
 
-    public double provaFinal(double exameFinal) {
-        double media = this.media();
-        if (media < 3 || media >= 7) {
+    public double provaFinal() {
+        double mp = this.media();
+        if (mp < 3 || mp >= 7) {
             return 0;
         }
-
-        return (media * 6 + exameFinal * 4) / 10;
+        return (50 - (mp * 6))/4;
     }
 
-    public String mostraNome() {
-        return nome;
+    @Override
+    public String toString() {
+        return "Aluno [matricula=" + matricula + ", nome=" + nome + ", prova1=" + prova1 + ", prova2=" + prova2
+                + ", trabalho=" + trabalho + ", média: " + media() + (provaFinal() != 0 ? (", media final= " + provaFinal()) : "") + "]";
     }
-
-    public int mostraMatricula() {
-        return this.matricula;
-    }
-
 }
