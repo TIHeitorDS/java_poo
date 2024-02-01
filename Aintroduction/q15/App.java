@@ -2,7 +2,7 @@
 
 package Aintroduction.q15;
 
-public class Fifteen {
+public class App {
     public static void main(String[] args) {
         int number = 1, divisors = 0, count = 0;
         String mensage = "Números perfeitos: ";

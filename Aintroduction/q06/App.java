@@ -5,7 +5,7 @@ package Aintroduction.q06;
 
 import java.util.Scanner;
 
-public class QuestionSix {
+public class App {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

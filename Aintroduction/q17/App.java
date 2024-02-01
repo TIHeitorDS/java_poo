@@ -3,7 +3,7 @@
 
 package Aintroduction.q17;
 
-public class Seventeen {
+public class App {
     public static void main(String[] args) {
         final double crescimentoA = 0.035, crescimentoB = 0.01;
         int populacaoA = 7000, populacaoB = 20000;

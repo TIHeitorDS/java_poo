@@ -4,7 +4,7 @@ package Aintroduction.q22;
 
 import java.util.Scanner;
 
-public class QuestionTwentyTwo {
+public class App {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

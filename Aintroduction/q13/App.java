@@ -4,7 +4,7 @@
 
 package Aintroduction.q13;
 
-public class QuestionThirteen {
+public class App {
     public static void main(String[] args) {
         final int ROW = 10, COLUMN = 6;
 
