@@ -16,4 +16,14 @@ public class Triangulo {
     public double perimetro() {
         return l1 + l2 + l3;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    
 }

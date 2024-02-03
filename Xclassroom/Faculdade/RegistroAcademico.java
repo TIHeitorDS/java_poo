@@ -16,4 +16,20 @@ public class RegistroAcademico {
     public double calculaMensalidade() {
         return 100*codigoCurso*percentualCobranca;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }    
 }
