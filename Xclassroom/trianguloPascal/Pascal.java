@@ -2,9 +2,9 @@ package Xclassroom.trianguloPascal;
 
 public class Pascal {
     private int[][] triangulo;
-    private final int LINHAS = 5;
-    public Pascal() {
-        triangulo = new int[LINHAS][];
+
+    public Pascal(int linhas) {
+        triangulo = new int[linhas][];
         for (int i = 0; i < triangulo.length; i++) {
             triangulo[i] = new int[i+2];
             triangulo[i][0] = 1;
