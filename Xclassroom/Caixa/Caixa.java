@@ -6,7 +6,6 @@ public class Caixa {
         CaixaBanco caixa2 = new CaixaBanco(2);
         CaixaBanco caixa3 = new CaixaBanco(3);
         CaixaBanco caixa4 = new CaixaBanco(4);
-        CaixaBanco caixa5 = new CaixaBanco(5);
 
         caixa1.iniciaAtendimento();
         caixa2.iniciaAtendimento();
