@@ -5,6 +5,7 @@ import java.util.Random;
 public class Team {
     Random rand = new Random();
     private String name;
+    private int win;
     private int loss;
     private int draw;
     private int points;
