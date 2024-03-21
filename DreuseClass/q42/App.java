@@ -7,7 +7,7 @@ import DreuseClass.q42.dominio.Funcionario;
 public class App {
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario("Douglas", 2300);
-        Administrativo administrativo = new Administrativo("Kleber", 1569, 233332, "noturno", 150.65);
+        Administrativo administrativo = new Administrativo("Kleber", 1569, 233332, true, 150.65);
         Assistente assistente = new Assistente("Heitor", 700, 121212);
 
         System.out.println(assistente);

@@ -1,31 +1,27 @@
 package DreuseClass.q42.dominio;
 
 public class Administrativo extends Assistente {
-    private String turno;
+    private boolean turno;
     private double adicional;
 
-    public Administrativo(String nome, double salario, int matricula, String turno, double adicional) {
+    public Administrativo(String nome, double salario, int matricula, boolean turno, double adicional) {
         super(nome, salario, matricula);
         this.turno = turno;
 
-        if (adicional < 0) {
-            this.adicional = 0.0;
-        } else {
-            this.adicional = adicional;
-        }
+        this.adicional = turno ? 0 : salario * 0.2;
+    }
+
+    public boolean isTurno() {
+        return turno;
+    }
+
+    public void setTurno(boolean turno) {
+        this.turno = turno;
     }
 
     @Override
     public double ganhoAnual() {
-        int mesesTrabalhados = 12;
-        double salarioAnual;
-
-        salarioAnual = super.salario * mesesTrabalhados;
-        if (turno.equals("noturno")) {
-            return salarioAnual += (this.salario / 12 * mesesTrabalhados);
-        }
-
-        return salarioAnual += (this.salario / 12 * mesesTrabalhados) + adicional;
+        return super.ganhoAnual() + 12 * this.adicional;
     }
 
     @Override

@@ -14,13 +14,7 @@ public class Funcionario {
     }
 
     public double ganhoAnual() {
-        int mesesTrabalhados = 12;
-        double salarioAnual;
-
-        salarioAnual = this.salario * 12;
-        salarioAnual += this.salario / 12 * mesesTrabalhados;
-
-        return salarioAnual;
+        return this.salario * 13;
     }
 
     @Override
