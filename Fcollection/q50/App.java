@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class App {
     public static void main(String[] args) {
-        String entrada = "(()())";
+        String entrada;
         Scanner input = new Scanner(System.in);
 
         System.out.print("informe uma entrada com ( e ): ");
