@@ -6,21 +6,21 @@ public class RollDice {
     public static void main(String[] args) {
         SecureRandom randomNumbers = new SecureRandom();
 
-        // criando dois objetos array para representar dados
+        // creating two dice
         int[] dice1 = { 1, 2, 3, 4, 5, 6 };
         int[] dice2 = { 1, 2, 3, 4, 5, 6 };
 
-        int[] frequencia = new int[13]; // array para contar a frequência da soma dos dados
-        int soma = 0;
+        int[] frequency = new int[13]; // this array will count the frequency of sum of the dice faces
+        int sum = 0;
 
         for (int i = 1; i <= 36000000; i++) {
-            soma = dice1[randomNumbers.nextInt(6)] + dice2[randomNumbers.nextInt(6)];
+            sum = dice1[randomNumbers.nextInt(6)] + dice2[randomNumbers.nextInt(6)];
 
-            ++frequencia[soma];
+            ++frequency[sum];
         }
 
-        for (int j = 2; j < frequencia.length; j++) {
-            System.out.printf("lado: %d, vezes somados: %d\n", j, frequencia[j]);
+        for (int j = 2; j < frequency.length; j++) {
+            System.out.printf("face: %d, frequency: %d\n", j, frequency[j]);
         }
     }
 }

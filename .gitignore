@@ -1,1 +1,4 @@
 *.class
+out
+.idea
+java_poo.iml
