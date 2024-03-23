@@ -11,6 +11,6 @@ public class EventoDelegacao {
 
     @Override
     public String toString() {
-        return "data: " + dataHora.getData() + ", hora: " + dataHora.getHora() + "h, evento: " + evento;
+        return dataHora.toString() + "h, evento: " + evento;
     }
 }
