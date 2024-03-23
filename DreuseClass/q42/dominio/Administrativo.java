@@ -4,7 +4,7 @@ public class Administrativo extends Assistente {
     private boolean turno;
     private double adicional;
 
-    public Administrativo(String nome, double salario, int matricula, boolean turno, double adicional) {
+    public Administrativo(String nome, double salario, int matricula, boolean turno) {
         super(nome, salario, matricula);
         this.turno = turno;
 
@@ -21,7 +21,7 @@ public class Administrativo extends Assistente {
 
     @Override
     public double ganhoAnual() {
-        return super.ganhoAnual() + 12 * this.adicional;
+        return super.ganhoAnual() + (12 * this.adicional);
     }
 
     @Override

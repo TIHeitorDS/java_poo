@@ -14,13 +14,7 @@ public class Tecnico extends Assistente {
 
     @Override
     public double ganhoAnual() {
-        int mesesTrabalhados = 12;
-        double salarioAnual;
-
-        salarioAnual = super.salario * mesesTrabalhados;
-        salarioAnual += (this.salario / 12 * mesesTrabalhados) + bonusSalarial;
-
-        return salarioAnual;
+        return super.ganhoAnual() * (1 + bonusSalarial);
     }
 
     @Override
