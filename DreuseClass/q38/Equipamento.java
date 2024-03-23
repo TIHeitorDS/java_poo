@@ -1,33 +1,55 @@
 package DreuseClass.q38;
 
 public class Equipamento {
-    private String memoriaPrincipal;
-    private String processador;
+    private String teclado;
+    private String mouse;
+    private String headSet;
+    private String monitor;
 
-    public Equipamento(String memoriaPrincipal, String processador) {
-        this.memoriaPrincipal = memoriaPrincipal;
-        this.processador = processador;
+    public Equipamento(String teclado, String mouse, String headSet, String monitor) {
+        this.teclado = teclado;
+        this.mouse = mouse;
+        this.headSet = headSet;
+        this.monitor = monitor;
     }
 
-    public String getMemoriaPrincipal() {
-        return memoriaPrincipal;
+    public String getTeclado() {
+        return teclado;
     }
 
-    public void setMemoriaPrincipal(String memoriaPrincipal) {
-        this.memoriaPrincipal = memoriaPrincipal;
+    public void setTeclado(String teclado) {
+        this.teclado = teclado;
     }
 
-    public String getProcessador() {
-        return processador;
+    public String getMouse() {
+        return mouse;
     }
 
-    public void setProcessador(String memoriaSecundaria) {
-        this.processador = memoriaSecundaria;
+    public void setMouse(String mouse) {
+        this.mouse = mouse;
+    }
+
+    public String getHeadSet() {
+        return headSet;
+    }
+
+    public void setHeadSet(String headSet) {
+        this.headSet = headSet;
+    }
+
+    public String getMonitor() {
+        return monitor;
+    }
+
+    public void setMonitor(String monitor) {
+        this.monitor = monitor;
     }
 
     @Override
     public String toString() {
-        return "memoria principal: " + memoriaPrincipal + ", memoria secundaria: " + processador;
+        return  "teclado='" + teclado + '\'' +
+                ", mouse='" + mouse + '\'' +
+                ", headSet='" + headSet + '\'' +
+                ", monitor='" + monitor + '\'';
     }
-
 }

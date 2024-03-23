@@ -1,34 +1,46 @@
 package DreuseClass.q38;
 
 public class Computador extends Equipamento {
-    private String marca;
-    private String modelo;
+    private String memoriaSecundaria;
+    private String ram;
+    private String placaDeVideo;
 
-    public Computador(String memoriaPrincipal, String processador, String marca, String modelo) {
-        super(memoriaPrincipal, processador);
-        this.marca = marca;
-        this.modelo = modelo;
+    public Computador(String teclado, String mouse, String headSet, String monitor, String memoriaSecundaria, String ram, String placaDeVideo) {
+        super(teclado, mouse, headSet, monitor);
+        this.memoriaSecundaria = memoriaSecundaria;
+        this.ram = ram;
+        this.placaDeVideo = placaDeVideo;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getMemoriaSecundaria() {
+        return memoriaSecundaria;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setMemoriaSecundaria(String memoriaSecundaria) {
+        this.memoriaSecundaria = memoriaSecundaria;
     }
 
-    public String getModelo() {
-        return modelo;
+    public String getRam() {
+        return ram;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setRam(String ram) {
+        this.ram = ram;
+    }
+
+    public String getPlacaDeVideo() {
+        return placaDeVideo;
+    }
+
+    public void setPlacaDeVideo(String placaDeVideo) {
+        this.placaDeVideo = placaDeVideo;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " marca: " + marca + ", modelo: " + modelo;
+        return  "memoria secundaria='" + memoriaSecundaria + '\'' +
+                ", ram='" + ram + '\'' +
+                ", placa de video='" + placaDeVideo + '\'' +
+                ", " + super.toString();
     }
-
 }
