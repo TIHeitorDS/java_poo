@@ -17,6 +17,8 @@ public class Funcionario {
         return this.salario * 13;
     }
 
+    public double getSalario() {return this.salario;}
+
     @Override
     public String toString() {
         return "nome: " + nome + ", salario: " + salario;
