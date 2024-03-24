@@ -12,23 +12,31 @@ public class App {
 
         charactersCopy = inverse(characters);
 
+        System.out.println("list original: ");
+
+        for (Character character : characters) {
+            System.out.print(character + " ");
+        }
+
+        System.out.println("\n\nlist invertida: ");
+
         for (Character character : charactersCopy) {
-            System.out.println(character);
+            System.out.print(character + " ");
         }
     }
 
     public static LinkedList<Character> inverse(LinkedList<Character> list) {
-        LinkedList<Character> element = new LinkedList<>();
-        ListIterator<Character> iterator = list.listIterator();
+        ListIterator<Character> listIterator = list.listIterator();
+        LinkedList<Character> copy = new LinkedList<>();
 
-        while (iterator.hasNext()) {
-            iterator.next();
+        while(listIterator.hasNext()) {
+            listIterator.next();
         }
 
-        while (iterator.hasPrevious()) {
-            element.add(iterator.previous());
+        while (listIterator.hasPrevious()) {
+            copy.add(listIterator.previous());
         }
 
-        return element;
+        return copy;
     }
 }

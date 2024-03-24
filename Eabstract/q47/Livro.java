@@ -1,6 +1,6 @@
 package Eabstract.q47;
 
-public abstract class Livro {
+public class Livro {
     private String titulo;
     private String autor;
     private int numeroDePaginas;
